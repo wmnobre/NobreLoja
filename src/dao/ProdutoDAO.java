@@ -11,4 +11,12 @@ package dao;
  */
 public class ProdutoDAO {
     
+    
+    
+    
+    public void Teste(){
+        
+    }
+    
 }
+

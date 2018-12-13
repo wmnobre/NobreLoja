@@ -46,6 +46,9 @@ public class FrmCategoria extends javax.swing.JInternalFrame {
 
         jLabel1.setText("jLabel1");
 
+        setMaximizable(true);
+        setResizable(true);
+
         jPanel1.setBackground(new java.awt.Color(153, 255, 102));
 
         lblCodigo.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
