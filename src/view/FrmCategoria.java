@@ -15,6 +15,9 @@ import model.Categoria;
  * @author 181301765
  */
 public class FrmCategoria extends javax.swing.JInternalFrame {
+    
+    
+    
 
     /**
      * Creates new form FrmCategoria
@@ -46,6 +49,7 @@ public class FrmCategoria extends javax.swing.JInternalFrame {
 
         jLabel1.setText("jLabel1");
 
+        setClosable(true);
         setMaximizable(true);
         setResizable(true);
 

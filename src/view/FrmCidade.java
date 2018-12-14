@@ -125,6 +125,11 @@ public class FrmCidade extends javax.swing.JInternalFrame {
         jLabel2.setText("Estado: ");
 
         cmbEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione...", "Paraná", "Rio Grande do Sul", "Santa Catarina" }));
+        cmbEstado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbEstadoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -221,6 +226,10 @@ public class FrmCidade extends javax.swing.JInternalFrame {
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNomeActionPerformed
+
+    private void cmbEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEstadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbEstadoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

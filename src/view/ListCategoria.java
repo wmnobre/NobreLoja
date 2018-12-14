@@ -77,6 +77,8 @@ public class ListCategoria extends javax.swing.JInternalFrame {
         tableCategorias = new javax.swing.JTable();
 
         setBackground(new java.awt.Color(0, 204, 204));
+        setIconifiable(true);
+        setMaximizable(true);
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
