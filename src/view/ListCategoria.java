@@ -77,6 +77,7 @@ public class ListCategoria extends javax.swing.JInternalFrame {
         tableCategorias = new javax.swing.JTable();
 
         setBackground(new java.awt.Color(0, 204, 204));
+        setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
 

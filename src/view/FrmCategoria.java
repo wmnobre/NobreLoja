@@ -16,6 +16,7 @@ import model.Categoria;
  */
 public class FrmCategoria extends javax.swing.JInternalFrame {
     
+    private ListCategoria telaListCategoria;
     
     
 
@@ -25,9 +26,29 @@ public class FrmCategoria extends javax.swing.JInternalFrame {
     
     private Categoria categoria;
     
-    public FrmCategoria() {
+    public FrmCategoria(int codigo, ListCategoria telaListCategoria) {
+        this.telaListCategoria = telaListCategoria;
         initComponents();
+        lblCodigo.setVisible(true);
+        lblCodigoValor.setVisible(true);
+        carregarCategoria();
+        categoria = CategoriaDAO.getCategoriaByCodigo(codigo);
+        carregarFormulario();
     }
+    
+    
+    private void carregarCategoria(){
+        List<Categoria> lista = CategoriaDAO.getCategorias();
+              
+        Estado fake = new Estado("Selecione...");
+        model.addElement(fake);
+        
+        for (Estado estado : lista) {
+            model.addElement( estado );
+        }
+        cmbEstado.setModel( model );
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
